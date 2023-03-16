@@ -1,0 +1,146 @@
+@import url('reset.css');
+@import url('global.css');
+@import url('components/_navigator.css');
+@import url('components/_pills.css');
+@import url('components/_link-button.css');
+@import url('components/_gallery.css');
+
+.s-wrapper {
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+    background-color: aqua;
+}
+
+.s-wrapper video {
+    position: fixed;
+    width: 100%;
+}
+
+.s-wrapper .s-left-column {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-right: 50px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+}
+
+.s-wrapper .s-main-content {
+    height: 100%;
+    width: 100%;
+    padding-left: 130px;
+    position: relative;
+}
+
+.s-wrapper .s-main-content_top {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.s-wrapper .s-main-content_bottom {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.s-wrapper .s-main-content .s-logo img {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+.s-wrapper .s-main-content_top .s-description {
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.s-wrapper .s-main-content_top .s-description .s-description_text p {
+    color: white;
+    line-height: 170%;
+}
+
+.s-wrapper .s-main-content_top .s-description .pills {
+    margin-bottom: 20px;
+}
+
+.s-description_text .sinopse {
+    font-size: 20px;
+}
+
+.s-wrapper .s-main-content .s-links {
+    padding: 20px;
+    padding-left: 0;
+}
+
+.s-wrapper .s-main-content .s-links ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.s-spiderman-01-01 {
+    background-image: url(../images/spiderMan-Tobey/movie1/background.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+.s-spiderman-01-02 {
+    background-image: url(../images/spiderMan-Tobey/movie2/background-01-02.jpg);
+    background-size: cover;
+}
+
+.s-spiderman-01-03 {
+    background-image: url(../images/spiderMan-Tobey/movie3/background.png);
+    background-size: cover;
+}
+
+.s-wrapper .s-main-content_bottom {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.gallery {
+    position: fixed;
+    top: calc(20vh + 20px);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+  }
+  
+  .gallery ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .gallery li {
+    margin-bottom: 15px;
+  }
+  
+  .gallery li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .gallery img {
+    max-width: 100%;
+  }
+
+  
